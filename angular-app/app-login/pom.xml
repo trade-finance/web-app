@@ -34,9 +34,10 @@
 							<goal>npm</goal>
 						</goals>
 						<configuration>
-							<arguments>run build</arguments>
+							<arguments>run build -- --base-href "/reportviewer/"</arguments>
 						</configuration>
 					</execution>
+					<!-- 
 					<execution>
 						<id>prod</id>
 						<goals>
@@ -47,6 +48,7 @@
 						</configuration>
 						<phase>generate-resources</phase>
 					</execution>
+					 -->
 				</executions>
 			</plugin>
 			<plugin>
