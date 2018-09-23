@@ -2,3 +2,9 @@
 /angular-app/app-home/src/main/web/app-home/dist
 /angular-app/app-home/src/main/web/app-home/node
 /angular-app/app-home/src/main/web/app-home/node_modules
+
+/angular-app/app-login/src/main/web/app-login/dist
+/angular-app/app-login/src/main/web/app-login/node
+/angular-app/app-login/src/main/web/app-login/node_modules
+/web-service/src/main/webapp/WEB-INF/jsp/app-home
+/web-service/src/main/webapp/WEB-INF/jsp/app-login
