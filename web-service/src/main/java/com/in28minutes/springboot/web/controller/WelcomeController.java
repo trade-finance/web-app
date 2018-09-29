@@ -12,7 +12,7 @@ public class WelcomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String showWelcomePage(ModelMap model) {
-        model.put("name", getLoggedInUserName());
+       // model.put("name", getLoggedInUserName());
         return "welcome";
     }
 
