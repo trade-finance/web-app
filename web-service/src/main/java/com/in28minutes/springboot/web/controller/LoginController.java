@@ -19,6 +19,7 @@ public class LoginController {
 	
 	@RequestMapping(value="/login", method = RequestMethod.GET)
 	public String showLoginPage(ModelMap model){
+		System.out.println("showLoginPage()");
 		return "login";
 	}
 	

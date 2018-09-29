@@ -1,24 +1,25 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.tradefin.app</groupId>
-    <artifactId>angular-app</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
-  <groupId>com.tradefin.app</groupId>
-  <artifactId>app-home</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>app-home</name>
-  <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.tradefin.app</groupId>
+		<artifactId>angular-app</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<groupId>com.tradefin.app</groupId>
+	<artifactId>app-home</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>app-home</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
-  <packaging>pom</packaging>
-  
-  <build>
+	<packaging>pom</packaging>
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>com.github.eirslett</groupId>
@@ -48,21 +49,12 @@
 							<goal>npm</goal>
 						</goals>
 						<configuration>
-							<arguments>run build -- --base-href "/reportviewer/"</arguments>
+							<arguments>run build -- --base-href "/app-home/"</arguments>
 						</configuration>
 					</execution>
-					<!-- 
-					<execution>
-						<id>prod</id>
-						<goals>
-							<goal>npm</goal>
-						</goals>
-						<configuration>
-							<arguments>run-script build</arguments>
-						</configuration>
-						<phase>generate-resources</phase>
-					</execution>
-					 -->
+					<!-- <execution> <id>prod</id> <goals> <goal>npm</goal> </goals> <configuration> 
+						<arguments>run-script build</arguments> </configuration> <phase>generate-resources</phase> 
+						</execution> -->
 				</executions>
 			</plugin>
 			<plugin>
@@ -76,7 +68,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>../../web-service/src/main/webapp/WEB-INF/jsp</outputDirectory>
+							<outputDirectory>../../web-service/src/main/resources/static</outputDirectory>
 							<resources>
 								<resource>
 									<directory>src/main/web/app-home/dist</directory>

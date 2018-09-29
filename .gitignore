@@ -8,3 +8,5 @@
 /angular-app/app-login/src/main/web/app-login/node_modules
 /web-service/src/main/webapp/WEB-INF/jsp/app-home
 /web-service/src/main/webapp/WEB-INF/jsp/app-login
+/web-service/src/main/resources/static/app-home
+/web-service/src/main/resources/static/app-login

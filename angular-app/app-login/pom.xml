@@ -34,7 +34,7 @@
 							<goal>npm</goal>
 						</goals>
 						<configuration>
-							<arguments>run build -- --base-href "/reportviewer/"</arguments>
+							<arguments>run build -- --base-href "/app-login/"</arguments>
 						</configuration>
 					</execution>
 					<!-- 
@@ -62,7 +62,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>../../web-service/src/main/webapp/WEB-INF/jsp</outputDirectory>
+							<outputDirectory>../../web-service/src/main/resources/static</outputDirectory>
 							<resources>
 								<resource>
 									<directory>src/main/web/app-login/dist</directory>
